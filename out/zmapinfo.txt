@@ -1,0 +1,10 @@
+GameInfo
+{
+	AddEventHandlers = "SpaceCombatHandler"
+}
+
+DoomEdNums
+{
+  31633 = OrzScreen
+  31640 = BattleScreen
+}

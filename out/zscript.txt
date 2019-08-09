@@ -1,0 +1,5 @@
+version "3.5"
+
+#include "orz.zsc"
+#include "animActors.zsc"
+#include "spacecombat.zsc"

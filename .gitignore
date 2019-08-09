@@ -1,0 +1,5 @@
+out/*.png
+start.bat
+*/__pycache__
+*.backup*
+*.dbs

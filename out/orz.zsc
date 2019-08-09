@@ -1,0 +1,64 @@
+Class OrzScreen : Actor
+{
+  States
+  {
+    Spawn:
+      TNT1 A 0;
+      TNT1 A 0 {
+        Vector3 spos = self.pos;
+        spos.x = spos.x - 0.1; // prevent z-fighting with the base image. TODO: account for angle.
+        Spawn("OrzText", self.pos, NO_REPLACE);
+        Spawn("OrzAnimBase", self.pos, NO_REPLACE);
+        Spawn("OrzAnim1", spos, NO_REPLACE);
+        Spawn("OrzAnim2", spos, NO_REPLACE);
+        Spawn("OrzAnim3", spos, NO_REPLACE);
+        Spawn("OrzAnim4", spos, NO_REPLACE);
+        Spawn("OrzAnim5", spos, NO_REPLACE);
+        Spawn("OrzAnim6", spos, NO_REPLACE);
+        Spawn("OrzAnim7", spos, NO_REPLACE);
+        Spawn("OrzAnim8", spos, NO_REPLACE);
+        Spawn("OrzAnim9", spos, NO_REPLACE);
+        Spawn("OrzAnim10", spos, NO_REPLACE);
+        Spawn("OrzAnim11", spos, NO_REPLACE);
+        Spawn("OrzAnim12", spos, NO_REPLACE);
+        Spawn("OrzAnim13", spos, NO_REPLACE);
+      }
+      TNT1 A -1;
+      stop;
+  }
+}
+
+Class OrzAnimBase : Actor
+{
+  Default {
+    +WALLSPRITE;
+  }
+  States
+  {
+    Spawn:
+      ORZA A -1;
+      stop;
+  }
+}
+
+Class OrzText : Actor
+{
+  States {
+    Spawn:
+      TNT1 A 35 * 10;
+
+      TNT1 A 1 A_PLAYSOUND("orz/000", CHAN_AUTO, 1, false, ATTN_NONE, false);
+      TNT1 A 35 * 5.091 A_LOG("THIS IS A SYSTEM MESSAGE FROM SHIP'S COMPUTER TRANSLATION SUBSYSTEM:");
+      TNT1 A 35 * 3.979 A_LOG("INCOMING MESSAGE EXTREMELY UNUSUAL IN COMPOSITION.");
+      TNT1 A 35 * 3.129 A_LOG("TRANSLATION INCLUDES MANY LINGUAL ANOMALIES.");
+      TNT1 A 35 * 3 A_LOG("OVERALL ACCURACY OF TRANSLATION IS: UNKNOWN");
+
+      TNT1 A 1 A_PLAYSOUND("orz/029", CHAN_AUTO, 1, false, ATTN_NONE, false);
+      TNT1 A 35 * 6.028 A_LOG("Hello extremely! I hope you like to *play*.");
+      TNT1 A 35 * 5.448 A_LOG("Some *campers* are not so good for *games*.");
+      TNT1 A 35 * 4 A_LOG("Is it time for *playing* yet?");
+      
+      stop;
+  }
+}
+

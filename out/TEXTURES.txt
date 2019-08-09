@@ -1,0 +1,1015 @@
+Sprite ORZAA0, 243, 107 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZAA0, 0, 0
+}
+
+Sprite ORZAB0, 20, 33 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -43, 61
+    Patch ORZAB0, 0, 0
+}
+
+Sprite ORZAC0, 20, 33 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -43, 61
+    Patch ORZAC0, 0, 0
+}
+
+Sprite ORZAD0, 20, 33 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -43, 61
+    Patch ORZAD0, 0, 0
+}
+
+Sprite ORZAE0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -22, 77
+    Patch ORZAE0, 0, 0
+}
+
+Sprite ORZAF0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -22, 77
+    Patch ORZAF0, 0, 0
+}
+
+Sprite ORZAG0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -22, 77
+    Patch ORZAG0, 0, 0
+}
+
+Sprite ORZAH0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -22, 77
+    Patch ORZAH0, 0, 0
+}
+
+Sprite ORZAI0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -22, 77
+    Patch ORZAI0, 0, 0
+}
+
+Sprite ORZAJ0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -22, 77
+    Patch ORZAJ0, 0, 0
+}
+
+Sprite ORZAK0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -63, 79
+    Patch ORZAK0, 0, 0
+}
+
+Sprite ORZAL0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -63, 79
+    Patch ORZAL0, 0, 0
+}
+
+Sprite ORZAM0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -63, 79
+    Patch ORZAM0, 0, 0
+}
+
+Sprite ORZAN0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -63, 79
+    Patch ORZAN0, 0, 0
+}
+
+Sprite ORZAO0, 18, 46 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -63, 79
+    Patch ORZAO0, 0, 0
+}
+
+Sprite ORZAP0, 28, 20 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 108, 39
+    Patch ORZAP0, 0, 0
+}
+
+Sprite ORZAQ0, 28, 20 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 108, 39
+    Patch ORZAQ0, 0, 0
+}
+
+Sprite ORZAR0, 28, 20 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 78, 47
+    Patch ORZAR0, 0, 0
+}
+
+Sprite ORZAS0, 28, 20 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 78, 47
+    Patch ORZAS0, 0, 0
+}
+
+Sprite ORZAT0, 28, 20 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 78, 47
+    Patch ORZAT0, 0, 0
+}
+
+Sprite ORZAU0, 22, 15 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 92, 80
+    Patch ORZAU0, 0, 0
+}
+
+Sprite ORZAV0, 22, 15 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 92, 80
+    Patch ORZAV0, 0, 0
+}
+
+Sprite ORZAW0, 25, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZAW0, 0, 0
+}
+
+Sprite ORZAX0, 26, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZAX0, 0, 0
+}
+
+Sprite ORZAY0, 26, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZAY0, 0, 0
+}
+
+Sprite ORZAZ0, 26, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZAZ0, 0, 0
+}
+
+Sprite ORZBA0, 26, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZBA0, 0, 0
+}
+
+Sprite ORZBB0, 26, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZBB0, 0, 0
+}
+
+Sprite ORZBC0, 26, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZBC0, 0, 0
+}
+
+Sprite ORZBD0, 26, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZBD0, 0, 0
+}
+
+Sprite ORZBE0, 27, 49 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZBE0, 0, 0
+}
+
+Sprite ORZBF0, 27, 49 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZBF0, 0, 0
+}
+
+Sprite ORZBG0, 27, 49 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -82, 95
+    Patch ORZBG0, 0, 0
+}
+
+Sprite ORZBH0, 21, 34 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 101, 82
+    Patch ORZBH0, 0, 0
+}
+
+Sprite ORZBI0, 21, 34 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 101, 82
+    Patch ORZBI0, 0, 0
+}
+
+Sprite ORZBJ0, 21, 34 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 101, 82
+    Patch ORZBJ0, 0, 0
+}
+
+Sprite ORZBK0, 6, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 3
+    Patch ORZBK0, 0, 0
+}
+
+Sprite ORZBL0, 6, 4 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 4
+    Patch ORZBL0, 0, 0
+}
+
+Sprite ORZBM0, 6, 5 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 5
+    Patch ORZBM0, 0, 0
+}
+
+Sprite ORZBN0, 6, 7 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 7
+    Patch ORZBN0, 0, 0
+}
+
+Sprite ORZBO0, 6, 9 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 9
+    Patch ORZBO0, 0, 0
+}
+
+Sprite ORZBP0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 11
+    Patch ORZBP0, 0, 0
+}
+
+Sprite ORZBQ0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 14
+    Patch ORZBQ0, 0, 0
+}
+
+Sprite ORZBR0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 16
+    Patch ORZBR0, 0, 0
+}
+
+Sprite ORZBS0, 6, 14 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 22
+    Patch ORZBS0, 0, 0
+}
+
+Sprite ORZBT0, 6, 14 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 26
+    Patch ORZBT0, 0, 0
+}
+
+Sprite ORZBU0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 31
+    Patch ORZBU0, 0, 0
+}
+
+Sprite ORZBV0, 6, 16 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 36
+    Patch ORZBV0, 0, 0
+}
+
+Sprite ORZBW0, 6, 16 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 41
+    Patch ORZBW0, 0, 0
+}
+
+Sprite ORZBX0, 6, 16 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 46
+    Patch ORZBX0, 0, 0
+}
+
+Sprite ORZBY0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 46
+    Patch ORZBY0, 0, 0
+}
+
+Sprite ORZBZ0, 1, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 46
+    Patch ORZBZ0, 0, 0
+}
+
+Sprite ORZCA0, 1, 2 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 66
+    Patch ORZCA0, 0, 0
+}
+
+Sprite ORZCB0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 75
+    Patch ORZCB0, 0, 0
+}
+
+Sprite ORZCC0, 6, 18 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 82
+    Patch ORZCC0, 0, 0
+}
+
+Sprite ORZCD0, 6, 23 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 89
+    Patch ORZCD0, 0, 0
+}
+
+Sprite ORZCE0, 6, 21 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 96
+    Patch ORZCE0, 0, 0
+}
+
+Sprite ORZCF0, 6, 20 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 103
+    Patch ORZCF0, 0, 0
+}
+
+Sprite ORZCG0, 6, 19 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 107
+    Patch ORZCG0, 0, 0
+}
+
+Sprite ORZCH0, 6, 12 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 107
+    Patch ORZCH0, 0, 0
+}
+
+Sprite ORZCI0, 6, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 115, 107
+    Patch ORZCI0, 0, 0
+}
+
+Sprite ORZCJ0, 7, 2 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 2
+    Patch ORZCJ0, 0, 0
+}
+
+Sprite ORZCK0, 7, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 3
+    Patch ORZCK0, 0, 0
+}
+
+Sprite ORZCL0, 7, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 3
+    Patch ORZCL0, 0, 0
+}
+
+Sprite ORZCM0, 7, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 3
+    Patch ORZCM0, 0, 0
+}
+
+Sprite ORZCN0, 7, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 3
+    Patch ORZCN0, 0, 0
+}
+
+Sprite ORZCO0, 7, 2 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 24
+    Patch ORZCO0, 0, 0
+}
+
+Sprite ORZCP0, 7, 2 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 24
+    Patch ORZCP0, 0, 0
+}
+
+Sprite ORZCQ0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZCQ0, 0, 0
+}
+
+Sprite ORZCR0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZCR0, 0, 0
+}
+
+Sprite ORZCS0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZCS0, 0, 0
+}
+
+Sprite ORZCT0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZCT0, 0, 0
+}
+
+Sprite ORZCU0, 7, 5 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 95
+    Patch ORZCU0, 0, 0
+}
+
+Sprite ORZCV0, 7, 17 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 107
+    Patch ORZCV0, 0, 0
+}
+
+Sprite ORZCW0, 7, 17 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 107
+    Patch ORZCW0, 0, 0
+}
+
+Sprite ORZCX0, 7, 8 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -46, 107
+    Patch ORZCX0, 0, 0
+}
+
+Sprite ORZCY0, 7, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 1
+    Patch ORZCY0, 0, 0
+}
+
+Sprite ORZCZ0, 7, 2 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 2
+    Patch ORZCZ0, 0, 0
+}
+
+Sprite ORZDA0, 7, 4 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 4
+    Patch ORZDA0, 0, 0
+}
+
+Sprite ORZDB0, 7, 7 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 7
+    Patch ORZDB0, 0, 0
+}
+
+Sprite ORZDC0, 7, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 11
+    Patch ORZDC0, 0, 0
+}
+
+Sprite ORZDD0, 7, 16 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 16
+    Patch ORZDD0, 0, 0
+}
+
+Sprite ORZDE0, 7, 20 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 23
+    Patch ORZDE0, 0, 0
+}
+
+Sprite ORZDF0, 7, 23 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 31
+    Patch ORZDF0, 0, 0
+}
+
+Sprite ORZDG0, 7, 25 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 40
+    Patch ORZDG0, 0, 0
+}
+
+Sprite ORZDH0, 7, 27 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 50
+    Patch ORZDH0, 0, 0
+}
+
+Sprite ORZDI0, 7, 29 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 61
+    Patch ORZDI0, 0, 0
+}
+
+Sprite ORZDJ0, 7, 31 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 73
+    Patch ORZDJ0, 0, 0
+}
+
+Sprite ORZDK0, 7, 32 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 85
+    Patch ORZDK0, 0, 0
+}
+
+Sprite ORZDL0, 7, 32 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 97
+    Patch ORZDL0, 0, 0
+}
+
+Sprite ORZDM0, 7, 30 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 107
+    Patch ORZDM0, 0, 0
+}
+
+Sprite ORZDN0, 7, 18 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 107
+    Patch ORZDN0, 0, 0
+}
+
+Sprite ORZDO0, 7, 6 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 24, 107
+    Patch ORZDO0, 0, 0
+}
+
+Sprite ORZDP0, 6, 2 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 2
+    Patch ORZDP0, 0, 0
+}
+
+Sprite ORZDQ0, 6, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 3
+    Patch ORZDQ0, 0, 0
+}
+
+Sprite ORZDR0, 6, 4 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 4
+    Patch ORZDR0, 0, 0
+}
+
+Sprite ORZDS0, 6, 6 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 6
+    Patch ORZDS0, 0, 0
+}
+
+Sprite ORZDT0, 6, 8 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 8
+    Patch ORZDT0, 0, 0
+}
+
+Sprite ORZDU0, 6, 9 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 9
+    Patch ORZDU0, 0, 0
+}
+
+Sprite ORZDV0, 6, 10 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 11
+    Patch ORZDV0, 0, 0
+}
+
+Sprite ORZDW0, 6, 7 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 11
+    Patch ORZDW0, 0, 0
+}
+
+Sprite ORZDX0, 6, 4 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 11
+    Patch ORZDX0, 0, 0
+}
+
+Sprite ORZDY0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZDY0, 0, 0
+}
+
+Sprite ORZDZ0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZDZ0, 0, 0
+}
+
+Sprite ORZEA0, 6, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 32
+    Patch ORZEA0, 0, 0
+}
+
+Sprite ORZEB0, 6, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 32
+    Patch ORZEB0, 0, 0
+}
+
+Sprite ORZEC0, 6, 3 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 32
+    Patch ORZEC0, 0, 0
+}
+
+Sprite ORZED0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZED0, 0, 0
+}
+
+Sprite ORZEE0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZEE0, 0, 0
+}
+
+Sprite ORZEF0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZEF0, 0, 0
+}
+
+Sprite ORZEG0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZEG0, 0, 0
+}
+
+Sprite ORZEH0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZEH0, 0, 0
+}
+
+Sprite ORZEI0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 122, 107
+    Patch ORZEI0, 0, 0
+}
+
+Sprite ORZEJ0, 1, 1 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 102
+    Patch ORZEJ0, 0, 0
+}
+
+Sprite ORZEK0, 6, 6 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 107
+    Patch ORZEK0, 0, 0
+}
+
+Sprite ORZEL0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 107
+    Patch ORZEL0, 0, 0
+}
+
+Sprite ORZEM0, 6, 11 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 107
+    Patch ORZEM0, 0, 0
+}
+
+Sprite ORZEN0, 6, 5 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset -94, 107
+    Patch ORZEN0, 0, 0
+}
+
+Sprite ORZEO0, 10, 10 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 12, 10
+    Patch ORZEO0, 0, 0
+}
+
+Sprite ORZEP0, 10, 10 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 12, 10
+    Patch ORZEP0, 0, 0
+}
+
+Sprite ORZEQ0, 10, 10 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 12, 10
+    Patch ORZEQ0, 0, 0
+}
+
+Sprite ORZER0, 10, 10 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 19, 13
+    Patch ORZER0, 0, 0
+}
+
+Sprite ORZES0, 12, 10 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 23, 16
+    Patch ORZES0, 0, 0
+}
+
+Sprite ORZET0, 10, 12 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 27, 24
+    Patch ORZET0, 0, 0
+}
+
+Sprite ORZEU0, 12, 22 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 29, 37
+    Patch ORZEU0, 0, 0
+}
+
+Sprite ORZEV0, 11, 23 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 31, 52
+    Patch ORZEV0, 0, 0
+}
+
+Sprite ORZEW0, 12, 34 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 32, 76
+    Patch ORZEW0, 0, 0
+}
+
+Sprite ORZEX0, 12, 42 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 32, 107
+    Patch ORZEX0, 0, 0
+}
+
+Sprite ORZEY0, 12, 42 {
+    XSCALE 0.5
+    YSCALE 0.5
+    Offset 32, 107
+    Patch ORZEY0, 0, 0
+}
+
+Sprite CRUAA0, 13, 35 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 6, 17
+    Patch CRUAA0, 0, 0
+}
+
+Sprite CRUAB0, 24, 35 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 12, 17
+    Patch CRUAB0, 0, 0
+}
+
+Sprite CRUAC0, 32, 29 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 16, 14
+    Patch CRUAC0, 0, 0
+}
+
+Sprite CRUAD0, 39, 24 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 19, 12
+    Patch CRUAD0, 0, 0
+}
+
+Sprite CRUAE0, 42, 11 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 21, 5
+    Patch CRUAE0, 0, 0
+}
+
+Sprite CRUAF0, 39, 24 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 19, 12
+    Patch CRUAF0, 0, 0
+}
+
+Sprite CRUAG0, 32, 30 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 16, 15
+    Patch CRUAG0, 0, 0
+}
+
+Sprite CRUAH0, 25, 35 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 12, 17
+    Patch CRUAH0, 0, 0
+}
+
+Sprite CRUAI0, 13, 36 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 6, 18
+    Patch CRUAI0, 0, 0
+}
+
+Sprite CRUAJ0, 24, 35 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 12, 17
+    Patch CRUAJ0, 0, 0
+}
+
+Sprite CRUAK0, 32, 30 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 16, 15
+    Patch CRUAK0, 0, 0
+}
+
+Sprite CRUAL0, 39, 24 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 19, 12
+    Patch CRUAL0, 0, 0
+}
+
+Sprite CRUAM0, 42, 11 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 21, 5
+    Patch CRUAM0, 0, 0
+}
+
+Sprite CRUAN0, 39, 23 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 19, 11
+    Patch CRUAN0, 0, 0
+}
+
+Sprite CRUAO0, 32, 30 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 16, 15
+    Patch CRUAO0, 0, 0
+}
+
+Sprite CRUAP0, 24, 35 {
+    XSCALE 2.0
+    YSCALE 2.0
+    Offset 12, 17
+    Patch CRUAP0, 0, 0
+}
+

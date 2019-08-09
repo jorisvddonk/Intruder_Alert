@@ -1,0 +1,309 @@
+
+Class OrzAnim1 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZA E 3;
+ORZA F 3;
+ORZA G 3;
+ORZA H 3;
+ORZA I 3;
+ORZA J 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim2 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZA K 3;
+ORZA L 3;
+ORZA M 3;
+ORZA N 3;
+ORZA O 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim3 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZA P 3;
+ORZA Q 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim4 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZA R 3;
+ORZA S 3;
+ORZA T 3;
+ORZA S 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim5 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZA U 3;
+ORZA V 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim6 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZA W 3;
+ORZA X 3;
+ORZA Y 3;
+ORZA Z 3;
+ORZB A 3;
+ORZB B 3;
+ORZB C 3;
+ORZB D 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim7 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZB E 3;
+ORZB F 3;
+ORZB G 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim8 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZB H 3;
+ORZB I 3;
+ORZB J 3;
+ORZB I 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim9 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZB K 3;
+ORZB L 3;
+ORZB M 3;
+ORZB N 3;
+ORZB O 3;
+ORZB P 3;
+ORZB Q 3;
+ORZB R 3;
+ORZB S 3;
+ORZB T 3;
+ORZB U 3;
+ORZB V 3;
+ORZB W 3;
+ORZB X 3;
+ORZB Y 3;
+ORZB Z 3;
+ORZC A 3;
+ORZC B 3;
+ORZC C 3;
+ORZC D 3;
+ORZC E 3;
+ORZC F 3;
+ORZC G 3;
+ORZC H 3;
+ORZC I 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim10 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZC J 3;
+ORZC K 3;
+ORZC L 3;
+ORZC M 3;
+ORZC N 3;
+ORZC O 3;
+ORZC P 3;
+ORZC Q 3;
+ORZC R 3;
+ORZC S 3;
+ORZC T 3;
+ORZC U 3;
+ORZC V 3;
+ORZC W 3;
+ORZC X 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim11 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZC Y 3;
+ORZC Z 3;
+ORZD A 3;
+ORZD B 3;
+ORZD C 3;
+ORZD D 3;
+ORZD E 3;
+ORZD F 3;
+ORZD G 3;
+ORZD H 3;
+ORZD I 3;
+ORZD J 3;
+ORZD K 3;
+ORZD L 3;
+ORZD M 3;
+ORZD N 3;
+ORZD O 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim12 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZD P 3;
+ORZD Q 3;
+ORZD R 3;
+ORZD S 3;
+ORZD T 3;
+ORZD U 3;
+ORZD V 3;
+ORZD W 3;
+ORZD X 3;
+ORZD Y 3;
+ORZD Z 3;
+ORZE A 3;
+ORZE B 3;
+ORZE C 3;
+ORZE D 3;
+ORZE E 3;
+ORZE F 3;
+ORZE G 3;
+ORZE H 3;
+ORZE I 3;
+ORZE J 3;
+ORZE K 3;
+ORZE L 3;
+ORZE M 3;
+ORZE N 3;
+            loop;
+    }
+}
+
+
+Class OrzAnim13 : Actor {
+    Default {
+        +WALLSPRITE;
+    }
+    States
+    {
+        Spawn:
+            Goto Ready;
+        Ready:
+ORZE O 3;
+ORZE P 3;
+ORZE Q 3;
+ORZE R 3;
+ORZE S 3;
+ORZE T 3;
+ORZE U 3;
+ORZE V 3;
+ORZE W 3;
+ORZE X 3;
+ORZE Y 3;
+            loop;
+    }
+}
+
