@@ -167,6 +167,8 @@ class EarthlingCruiser : Actor {
       angle = angle - 16;
     }
 
+    // Console.Printf("%i", angle);
+
     if (angle == 0) {
       SetState(ResolveState("S0"));
     }
@@ -199,6 +201,9 @@ class EarthlingCruiser : Actor {
     }
     if (angle == 10) {
       SetState(ResolveState("S10"));
+    }
+    if (angle == 11) {
+      SetState(ResolveState("S11"));
     }
     if (angle == 12) {
       SetState(ResolveState("S12"));
