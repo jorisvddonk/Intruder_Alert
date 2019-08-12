@@ -1,0 +1,140 @@
+class Spaceship : Actor {
+  Vector3 initialPosition;
+  Vector2 mov;
+  int angle;
+
+  int roting;
+  bool thrusting;
+
+  int lastRot;
+  int lastThrust;
+  Default {
+    +NOGRAVITY;
+    +WALLSPRITE;
+    +DONTINTERPOLATE;
+  }
+
+  override void PostBeginPlay()
+  {
+    mov = (0,0);
+    angle = 0;
+    roting = 0;
+    lastRot = 0;
+    lastThrust = 0;
+    thrusting = false;
+    initialPosition = (self.Pos.x, self.Pos.y, self.Pos.z);
+  }
+
+  void turn(int a) {
+    roting = a;
+  }
+
+  void thrust(bool a) {
+    thrusting = a;
+  }
+
+  void updateStateFromAngle() {
+    angle = angle + roting;
+    if (angle < 0) {
+      angle = angle + 16;
+    }
+    if (angle > 15) {
+      angle = angle - 16;
+    }
+
+    // Console.Printf("%i", angle);
+
+    if (angle == 0) {
+      SetState(ResolveState("S0"));
+    }
+    if (angle == 1) {
+      SetState(ResolveState("S1"));
+    }
+    if (angle == 2) {
+      SetState(ResolveState("S2"));
+    }
+    if (angle == 3) {
+      SetState(ResolveState("S3"));
+    }
+    if (angle == 4) {
+      SetState(ResolveState("S4"));
+    }
+    if (angle == 5) {
+      SetState(ResolveState("S5"));
+    }
+    if (angle == 6) {
+      SetState(ResolveState("S6"));
+    }
+    if (angle == 7) {
+      SetState(ResolveState("S7"));
+    }
+    if (angle == 8) {
+      SetState(ResolveState("S8"));
+    }
+    if (angle == 9) {
+      SetState(ResolveState("S9"));
+    }
+    if (angle == 10) {
+      SetState(ResolveState("S10"));
+    }
+    if (angle == 11) {
+      SetState(ResolveState("S11"));
+    }
+    if (angle == 12) {
+      SetState(ResolveState("S12"));
+    }
+    if (angle == 13) {
+      SetState(ResolveState("S13"));
+    }
+    if (angle == 14) {
+      SetState(ResolveState("S14"));
+    }
+    if (angle == 15) {
+      SetState(ResolveState("S15"));
+    }
+  }
+
+  void maybeRotate() {
+    lastRot = lastRot - 1;
+    if (lastRot <= 0) {
+      if (roting != 0) {
+        updateStateFromAngle();
+        lastRot = 10;
+      }
+    }
+  }
+
+  void maybeThrust() {
+    lastThrust = lastThrust - 1;
+    if (lastThrust <= 0) {
+      if (thrusting) {
+        mov = (mov.x + (sin(angle * (360 / 16))), mov.y + (cos(angle * (360 / 16))));
+      }
+    }
+  }
+
+  Vector3 getClampedNewPosition() {
+    float newX = self.Pos.x;
+    float newY = self.Pos.y + (mov.x * 0.02);
+    float newZ = self.Pos.z + (mov.y * 0.02);
+    if (newY > initialPosition.y + 100) {
+      newY = newY - 200;
+    }
+    if (newY < initialPosition.y - 100) {
+      newY = newY + 200;
+    }
+    if (newZ > initialPosition.z + 100) {
+      newZ = newZ - 200;
+    }
+    if (newZ < initialPosition.z - 100) {
+      newZ = newZ + 200;
+    }
+    return (newX, newY, newZ);
+  }
+
+  override void Tick() {
+    maybeRotate();
+    maybeThrust();
+    SetXYZ(getClampedNewPosition());
+  }
+}

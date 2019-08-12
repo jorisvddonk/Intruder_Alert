@@ -2,4 +2,6 @@ version "3.5"
 
 #include "orz.zsc"
 #include "animActors.zsc"
+#include "spaceship.zsc"
+#include "cruiser.zsc"
 #include "spacecombat.zsc"

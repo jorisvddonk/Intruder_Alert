@@ -1,0 +1,54 @@
+class EarthlingCruiser : Spaceship {
+  States {
+    Spawn:
+      Goto S0;
+    S0:
+      CRUA A -1;
+      stop;
+    S1:
+      CRUA B -1;
+      stop;
+    S2:
+      CRUA C -1;
+      stop;
+    S3:
+      CRUA D -1;
+      stop;
+    S4:
+      CRUA E -1;
+      stop;
+    S5:
+      CRUA F -1;
+      stop;
+    S6:
+      CRUA G -1;
+      stop;
+    S7:
+      CRUA H -1;
+      stop;
+    S8:
+      CRUA I -1;
+      stop;
+    S9:
+      CRUA J -1;
+      stop;
+    S10:
+      CRUA K -1;
+      stop;
+    S11:
+      CRUA L -1;
+      stop;
+    S12:
+      CRUA M -1;
+      stop;
+    S13:
+      CRUA N -1;
+      stop;
+    S14:
+      CRUA O -1;
+      stop;
+    S15:
+      CRUA P -1;
+      stop;
+  }
+}
