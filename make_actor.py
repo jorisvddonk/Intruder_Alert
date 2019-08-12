@@ -11,28 +11,59 @@ INDIR = './sc2/orz/'
 OUTDIR = "./out/"
 
 ani = open('%sorz.ani' % INDIR, 'r')
-BASENAME = "ORZ"
 texturesf = open('%sTEXTURES.txt' % (OUTDIR), 'w')
 actorsf = open('%sanimActors.zsc' % OUTDIR, 'w')
 
 os.makedirs(OUTDIR, exist_ok=True)
 
 
-def getCode(x):
+def getCode(x, basename):
     x0 = chr(65 + int(x / 26))
     x1 = chr(65 + int(x % 26))
-    return "%s%s%s0" % (BASENAME, x0, x1)
+    return "%s%s%s0" % (basename, x0, x1)
+
+
+def copyShip(inglob, basename):
+    retval = []
+    for g in glob.glob('./sc2/ships/%s*.png' % inglob):
+        m = re.search('%s(.*)\.png' % inglob.split('/').pop(), g)
+        anglei = int(m.group(1))
+        outImageCode = getCode(anglei, basename)
+        outImage = "%s.png" % outImageCode
+        inImagePath = g
+        outImagePath = '%s%s' % (OUTDIR, outImage)
+        if not (os.path.exists(outImagePath)):
+            copyfile(inImagePath, outImagePath)
+        angle = (360 / 16) * anglei
+        retval.append({"angle": angle, "anglei": anglei,
+                       "imageCode": outImageCode, "imagePath": outImagePath})
+    return retval
+
+
+def writeBasicSprite(spriteInfo, scale):
+    im = Image.open(spriteInfo["imagePath"])
+    width = im.size[0]
+    height = im.size[1]
+    sname = spriteInfo["imageCode"]
+    texturesf.write('''Sprite %s, %s, %s {
+    XSCALE %s
+    YSCALE %s
+    Offset %s, %s
+    Patch %s, 0, 0
+}
+
+''' % (sname, width, height, scale, scale, int(width*0.5), int(height*0.5), sname))
 
 
 n = 1
 for anim in AMBIENT_ANIM:
     codes = []
     for i in range(anim["StartIndex"], anim["StartIndex"] + anim["NumFrames"]):
-        codes.append(getCode(i))
+        codes.append(getCode(i, "ORZ"))
     if anim["AnimFlags"] == "YOYO_ANIM":
         print('yo yo')
         for i in range(anim["StartIndex"] + anim["NumFrames"] - 2, anim["StartIndex"], -1):
-            codes.append(getCode(i))
+            codes.append(getCode(i, "ORZ"))
     if anim["AnimFlags"] == "RANDOM_ANIM":
         print('todo random')
     print(codes)
@@ -63,7 +94,7 @@ IMG_ZERO_HEIGHT = ZERO_IMG.size[1]
 for line in ani.read().splitlines():
     splitted = line.split()
     x = int(splitted[0][4:7])
-    outImageCode = getCode(x)
+    outImageCode = getCode(x, "ORZ")
     outImage = "%s.png" % outImageCode
     inImagePath = '%s%s' % (INDIR, splitted[0])
     outImagePath = '%s%s' % (OUTDIR, outImage)
@@ -85,20 +116,19 @@ for line in ani.read().splitlines():
 
 actorsf.close()
 
-for g in glob.glob('./out/CRU*.png'):
-    im = Image.open(g)
-    width = im.size[0]
-    height = im.size[1]
-    m = re.search('(CRU.*0)\.png', g)
-    sname = m.group(1)
-    texturesf.write('''Sprite %s, %s, %s {
-    XSCALE 2.0
-    YSCALE 2.0
-    Offset %s, %s
-    Patch %s, 0, 0
-}
 
-''' % (sname, width, height, int(width*0.5), int(height*0.5), sname))
+nemesis_base_images = copyShip('orz/nemesis-big-', 'NMB')
+nemesis_turret_images = copyShip('orz/turret-big-', 'NMT')
+cruiser_images = copyShip('human/cruiser-big-', 'CRU')
+
+for imginfo in cruiser_images:
+    writeBasicSprite(imginfo, 2)
+
+for imginfo in nemesis_base_images:
+    writeBasicSprite(imginfo, 2)
+
+for imginfo in nemesis_turret_images:
+    writeBasicSprite(imginfo, 2)
 
 for g in glob.glob('./out/SPA*.png'):
     im = Image.open(g)

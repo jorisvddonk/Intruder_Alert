@@ -902,115 +902,339 @@ Sprite ORZEY0, 12, 42 {
 }
 
 Sprite CRUAA0, 13, 35 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 6, 17
     Patch CRUAA0, 0, 0
 }
 
 Sprite CRUAB0, 24, 35 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 12, 17
     Patch CRUAB0, 0, 0
 }
 
 Sprite CRUAC0, 32, 29 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 16, 14
     Patch CRUAC0, 0, 0
 }
 
 Sprite CRUAD0, 39, 24 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 19, 12
     Patch CRUAD0, 0, 0
 }
 
 Sprite CRUAE0, 42, 11 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 21, 5
     Patch CRUAE0, 0, 0
 }
 
 Sprite CRUAF0, 39, 24 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 19, 12
     Patch CRUAF0, 0, 0
 }
 
 Sprite CRUAG0, 32, 30 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 16, 15
     Patch CRUAG0, 0, 0
 }
 
 Sprite CRUAH0, 25, 35 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 12, 17
     Patch CRUAH0, 0, 0
 }
 
 Sprite CRUAI0, 13, 36 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 6, 18
     Patch CRUAI0, 0, 0
 }
 
 Sprite CRUAJ0, 24, 35 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 12, 17
     Patch CRUAJ0, 0, 0
 }
 
 Sprite CRUAK0, 32, 30 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 16, 15
     Patch CRUAK0, 0, 0
 }
 
 Sprite CRUAL0, 39, 24 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 19, 12
     Patch CRUAL0, 0, 0
 }
 
 Sprite CRUAM0, 42, 11 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 21, 5
     Patch CRUAM0, 0, 0
 }
 
 Sprite CRUAN0, 39, 23 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 19, 11
     Patch CRUAN0, 0, 0
 }
 
 Sprite CRUAO0, 32, 30 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 16, 15
     Patch CRUAO0, 0, 0
 }
 
 Sprite CRUAP0, 24, 35 {
-    XSCALE 2.0
-    YSCALE 2.0
+    XSCALE 2
+    YSCALE 2
     Offset 12, 17
     Patch CRUAP0, 0, 0
+}
+
+Sprite NMBAA0, 29, 23 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 11
+    Patch NMBAA0, 0, 0
+}
+
+Sprite NMBAB0, 27, 28 {
+    XSCALE 2
+    YSCALE 2
+    Offset 13, 14
+    Patch NMBAB0, 0, 0
+}
+
+Sprite NMBAC0, 28, 28 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 14
+    Patch NMBAC0, 0, 0
+}
+
+Sprite NMBAD0, 29, 27 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 13
+    Patch NMBAD0, 0, 0
+}
+
+Sprite NMBAE0, 23, 29 {
+    XSCALE 2
+    YSCALE 2
+    Offset 11, 14
+    Patch NMBAE0, 0, 0
+}
+
+Sprite NMBAF0, 29, 27 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 13
+    Patch NMBAF0, 0, 0
+}
+
+Sprite NMBAG0, 30, 29 {
+    XSCALE 2
+    YSCALE 2
+    Offset 15, 14
+    Patch NMBAG0, 0, 0
+}
+
+Sprite NMBAH0, 27, 27 {
+    XSCALE 2
+    YSCALE 2
+    Offset 13, 13
+    Patch NMBAH0, 0, 0
+}
+
+Sprite NMBAI0, 29, 23 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 11
+    Patch NMBAI0, 0, 0
+}
+
+Sprite NMBAJ0, 27, 28 {
+    XSCALE 2
+    YSCALE 2
+    Offset 13, 14
+    Patch NMBAJ0, 0, 0
+}
+
+Sprite NMBAK0, 29, 30 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 15
+    Patch NMBAK0, 0, 0
+}
+
+Sprite NMBAL0, 29, 27 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 13
+    Patch NMBAL0, 0, 0
+}
+
+Sprite NMBAM0, 23, 29 {
+    XSCALE 2
+    YSCALE 2
+    Offset 11, 14
+    Patch NMBAM0, 0, 0
+}
+
+Sprite NMBAN0, 29, 27 {
+    XSCALE 2
+    YSCALE 2
+    Offset 14, 13
+    Patch NMBAN0, 0, 0
+}
+
+Sprite NMBAO0, 30, 29 {
+    XSCALE 2
+    YSCALE 2
+    Offset 15, 14
+    Patch NMBAO0, 0, 0
+}
+
+Sprite NMBAP0, 27, 28 {
+    XSCALE 2
+    YSCALE 2
+    Offset 13, 14
+    Patch NMBAP0, 0, 0
+}
+
+Sprite NMTAA0, 13, 17 {
+    XSCALE 2
+    YSCALE 2
+    Offset 6, 8
+    Patch NMTAA0, 0, 0
+}
+
+Sprite NMTAB0, 12, 16 {
+    XSCALE 2
+    YSCALE 2
+    Offset 6, 8
+    Patch NMTAB0, 0, 0
+}
+
+Sprite NMTAC0, 15, 15 {
+    XSCALE 2
+    YSCALE 2
+    Offset 7, 7
+    Patch NMTAC0, 0, 0
+}
+
+Sprite NMTAD0, 16, 12 {
+    XSCALE 2
+    YSCALE 2
+    Offset 8, 6
+    Patch NMTAD0, 0, 0
+}
+
+Sprite NMTAE0, 17, 13 {
+    XSCALE 2
+    YSCALE 2
+    Offset 8, 6
+    Patch NMTAE0, 0, 0
+}
+
+Sprite NMTAF0, 16, 12 {
+    XSCALE 2
+    YSCALE 2
+    Offset 8, 6
+    Patch NMTAF0, 0, 0
+}
+
+Sprite NMTAG0, 15, 15 {
+    XSCALE 2
+    YSCALE 2
+    Offset 7, 7
+    Patch NMTAG0, 0, 0
+}
+
+Sprite NMTAH0, 12, 16 {
+    XSCALE 2
+    YSCALE 2
+    Offset 6, 8
+    Patch NMTAH0, 0, 0
+}
+
+Sprite NMTAI0, 13, 17 {
+    XSCALE 2
+    YSCALE 2
+    Offset 6, 8
+    Patch NMTAI0, 0, 0
+}
+
+Sprite NMTAJ0, 12, 16 {
+    XSCALE 2
+    YSCALE 2
+    Offset 6, 8
+    Patch NMTAJ0, 0, 0
+}
+
+Sprite NMTAK0, 15, 15 {
+    XSCALE 2
+    YSCALE 2
+    Offset 7, 7
+    Patch NMTAK0, 0, 0
+}
+
+Sprite NMTAL0, 16, 12 {
+    XSCALE 2
+    YSCALE 2
+    Offset 8, 6
+    Patch NMTAL0, 0, 0
+}
+
+Sprite NMTAM0, 17, 13 {
+    XSCALE 2
+    YSCALE 2
+    Offset 8, 6
+    Patch NMTAM0, 0, 0
+}
+
+Sprite NMTAN0, 16, 12 {
+    XSCALE 2
+    YSCALE 2
+    Offset 8, 6
+    Patch NMTAN0, 0, 0
+}
+
+Sprite NMTAO0, 15, 15 {
+    XSCALE 2
+    YSCALE 2
+    Offset 7, 7
+    Patch NMTAO0, 0, 0
+}
+
+Sprite NMTAP0, 12, 16 {
+    XSCALE 2
+    YSCALE 2
+    Offset 6, 8
+    Patch NMTAP0, 0, 0
 }
 
 Sprite SPACA0, 256, 256 {
