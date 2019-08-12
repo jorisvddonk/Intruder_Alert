@@ -1,0 +1,67 @@
+class PIDController: Thinker {
+  float kP;
+  float kI;
+  float kD;
+  float minIntegral;
+  float minCapIntegral;
+  float error;
+  float previousError;
+  float integralError;
+  float derivativeError;
+  float maxCapIntegral;
+  float maxIntegral;
+
+  override void PostBeginPlay() {
+    kp = -0.45;
+    ki = 0.0;
+    kd = -80;
+    minIntegral = -10;
+    maxIntegral = 10;
+    minCapIntegral = -10;
+    maxCapIntegral = 10;
+    error = 0;
+    previousError = 0;
+  }
+
+  void update(float current, float target) {
+    self.error = target - current;
+  }
+
+  void reset() {
+    self.integralError = 0;
+  }
+
+  float step() {
+    self.derivativeError = self.error - self.previousError;
+    self.integralError = self.integralError + self.error;
+
+    if (
+      self.integralError < self.minCapIntegral
+    ) {
+      self.integralError = self.minCapIntegral;
+    }
+    if (
+      self.integralError > self.maxCapIntegral
+    ) {
+      self.integralError = self.maxCapIntegral;
+    }
+
+    float mP = self.error * self.kP;
+    float mI = self.integralError * self.kI;
+    float mD = self.derivativeError * self.kD;
+
+    if (
+       mI < self.minIntegral
+    ) {
+      mI = self.minIntegral;
+    }
+    if (
+      mI > self.maxIntegral
+    ) {
+      mI = self.maxIntegral;
+    }
+
+    self.previousError = self.error;
+    return mP + mI + mD;
+  }
+}

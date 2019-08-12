@@ -63,7 +63,17 @@ class BattleScreen: Actor {
       TNT1 A 0 {
         Vector3 spos = self.pos;
         spos.x = spos.x - 0.1; // prevent z-fighting with the base image. TODO: account for angle.
-        Spawn("EarthlingCruiser", spos, NO_REPLACE);
+        EarthlingCruiser cruiser = EarthlingCruiser(Spawn("EarthlingCruiser", spos, NO_REPLACE));
+        cruiser.setuPosition((0,0));
+
+        Vector3 npos = self.pos;
+        npos.y = npos.y - 20;
+        npos.z = npos.z - 20;
+        npos.x = npos.x - 0.1; // prevent z-fighting with the base image. TODO: account for angle.
+        Nemesis nemesis = Nemesis(Spawn("Nemesis", npos, NO_REPLACE));
+        nemesis.setuPosition((20,20));
+        nemesis.setTarget(cruiser);
+        nemesis.setPlayerShip(cruiser);
       }
       SPAC A -1;
       stop;

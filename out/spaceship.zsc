@@ -1,6 +1,7 @@
 class Spaceship : Actor {
   Vector3 initialPosition;
   Vector2 mov;
+  Vector2 uPosition;
   int angle;
 
   int roting;
@@ -23,6 +24,10 @@ class Spaceship : Actor {
     lastThrust = 0;
     thrusting = false;
     initialPosition = (self.Pos.x, self.Pos.y, self.Pos.z);
+  }
+
+  void setuPosition(Vector2 position) {
+    self.uPosition = position;
   }
 
   void turn(int a) {
@@ -113,28 +118,19 @@ class Spaceship : Actor {
     }
   }
 
-  Vector3 getClampedNewPosition() {
-    float newX = self.Pos.x;
-    float newY = self.Pos.y + (mov.x * 0.02);
-    float newZ = self.Pos.z + (mov.y * 0.02);
-    if (newY > initialPosition.y + 100) {
-      newY = newY - 200;
-    }
-    if (newY < initialPosition.y - 100) {
-      newY = newY + 200;
-    }
-    if (newZ > initialPosition.z + 100) {
-      newZ = newZ - 200;
-    }
-    if (newZ < initialPosition.z - 100) {
-      newZ = newZ + 200;
-    }
-    return (newX, newY, newZ);
+  void updateUniversePosition() {
+    self.uPosition.x = self.uPosition.x + (mov.x * 0.02);
+    self.uPosition.y = self.uPosition.y + (mov.y * 0.02);
+  }
+
+  virtual Vector3 getDoomWorldPosition() {
+    return self.initialPosition;
   }
 
   override void Tick() {
     maybeRotate();
     maybeThrust();
-    SetXYZ(getClampedNewPosition());
+    updateUniversePosition();
+    SetXYZ(getDoomWorldPosition());
   }
 }

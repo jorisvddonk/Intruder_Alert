@@ -1,0 +1,89 @@
+class AISpaceship : Spaceship {
+  PIDController posXPID;
+  PIDController posYPID;
+  Spaceship target;
+  Spaceship playerShip;
+  
+  void setTarget(Spaceship tgt) {
+    self.target = tgt;
+  }
+
+  void setPlayerShip(Spaceship tgt) {
+    self.playerShip = tgt;
+  }
+
+  override void PostBeginPlay()
+  {
+    Super.PostBeginPlay();
+    posXPID = new("PIDController");
+    posYPID = new("PIDController");
+  }
+
+  float angleBetween (Vector2 from, Vector2 to) {
+    Vector2 A = from.Unit();
+    Vector2 B = to.Unit();
+    return ACos(A.x * B.x + A.y * B.y);
+  }
+
+  float angleTo (Vector2 from, Vector2 to) {
+    Vector2 F = from.Unit();
+    Vector2 T = to.Unit();    
+    float sign = F.x * T.y - F.y * T.x;
+    float anglefrom = Abs(self.angleBetween(F, T));
+
+    if (anglefrom > 180) {
+      anglefrom = anglefrom - 180;
+    }
+    if (sign < 0) {
+      sign = -1;
+    }
+    if (sign >= 0) {
+      sign = 1;
+    }
+    // Console.Printf("sign: %f, anglefrom: %f", sign, anglefrom);
+    return sign * anglefrom;
+  }
+
+  Vector2 getRotationVector (float anglesixteen) {
+    float x = Sin(anglesixteen * (360/16));
+    float y = Cos(anglesixteen * (360/16));
+    Vector2 vec = (x,y);
+    return vec.Unit();
+  }
+
+  override Vector3 getDoomWorldPosition() {
+    float newX = self.playerShip.pos.x;
+    float newY = self.playerShip.pos.y - (self.playerShip.uPosition.x - self.uPosition.x);
+    float newZ = self.playerShip.pos.z - (self.playerShip.uPosition.y - self.uPosition.y);
+    return (newX, newY, newZ);
+  }
+
+  override void Tick() {
+    self.posXPID.update(self.uPosition.x, self.target.uPosition.x);
+    self.posYPID.update(self.uPosition.y, self.target.uPosition.y);
+    float x_thrust = self.posXPID.step();
+    float y_thrust = self.posYPID.step();
+
+    Vector2 targetVector = (x_thrust, y_thrust);
+    Vector2 rotationVector = self.getRotationVector(self.angle);
+    float thrust_angle = self.angleTo(rotationVector, targetVector);
+
+    if (thrust_angle < 0) {
+      self.turn(-1);
+    } else if (thrust_angle > 0) {
+      self.turn(1);
+    } else {
+      self.turn(0);
+    }
+
+    if (thrust_angle < -150 || thrust_angle > 150) {
+      self.thrust(true);
+    } else {
+      self.thrust(false);
+    }
+    
+    //Console.Printf("xt:%f yt:%f       tA: %f", x_thrust, y_thrust, thrust_angle);
+
+    Super.Tick();
+  }
+}
