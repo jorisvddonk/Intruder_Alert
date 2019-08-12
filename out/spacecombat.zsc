@@ -1,7 +1,7 @@
  class SpaceCombatHandler : EventHandler
  {
    override bool InputProcess(InputEvent e) {
-    Console.Printf("%i", e.KeyScan);
+    //Console.Printf("%i", e.KeyScan);
     if (e.KeyScan == 35) {
       if (e.Type == InputEvent.Type_KeyDown) {
         EventHandler.SendNetworkEvent("rotate", -1);
@@ -52,13 +52,20 @@
  }
 
 class BattleScreen: Actor {
+  Default {
+    +NOGRAVITY;
+    +WALLSPRITE;
+  }
+
   States {
     Spawn:
       TNT1 A 0;
       TNT1 A 0 {
         Vector3 spos = self.pos;
+        spos.x = spos.x - 0.1; // prevent z-fighting with the base image. TODO: account for angle.
         Spawn("EarthlingCruiser", spos, NO_REPLACE);
       }
+      SPAC A -1;
       stop;
   }
 }
@@ -153,7 +160,6 @@ class EarthlingCruiser : Actor {
 
   void updateStateFromAngle() {
     angle = angle + roting;
-    Console.Printf("%i // %i", angle, roting);
     if (angle < 0) {
       angle = angle + 16;
     }
@@ -223,7 +229,6 @@ class EarthlingCruiser : Actor {
     if (lastThrust <= 0) {
       if (thrusting) {
         mov = (mov.x + (sin(angle * (360 / 16))), mov.y + (cos(angle * (360 / 16))));
-        Console.Printf("%f - %f // %f : %f", mov.x, mov.y, sin(angle * (360 / 16)), cos(angle * (360 / 16)));
       }
     }
   }
