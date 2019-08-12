@@ -100,5 +100,20 @@ for g in glob.glob('./out/CRU*.png'):
 
 ''' % (sname, width, height, int(width*0.5), int(height*0.5), sname))
 
+for g in glob.glob('./out/SPA*.png'):
+    im = Image.open(g)
+    width = im.size[0]
+    height = im.size[1]
+    m = re.search('(SPA.*0)\.png', g)
+    sname = m.group(1)
+    texturesf.write('''Sprite %s, %s, %s {
+    XSCALE 1.0
+    YSCALE 1.0
+    Offset %s, %s
+    Patch %s, 0, 0
+}
+
+''' % (sname, width, height, int(width*0.5), int(height*0.5), sname))
+
 
 texturesf.close()

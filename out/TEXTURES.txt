@@ -1013,3 +1013,10 @@ Sprite CRUAP0, 24, 35 {
     Patch CRUAP0, 0, 0
 }
 
+Sprite SPACA0, 256, 256 {
+    XSCALE 1.0
+    YSCALE 1.0
+    Offset 128, 128
+    Patch SPACA0, 0, 0
+}
+
