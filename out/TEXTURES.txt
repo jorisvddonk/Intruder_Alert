@@ -1244,3 +1244,17 @@ Sprite SPACA0, 256, 256 {
     Patch SPACA0, 0, 0
 }
 
+Sprite SPACB0, 2, 2 {
+    XSCALE 1.0
+    YSCALE 1.0
+    Offset 1, 1
+    Patch SPACB0, 0, 0
+}
+
+Sprite SPACC0, 1, 1 {
+    XSCALE 1.0
+    YSCALE 1.0
+    Offset 0, 0
+    Patch SPACC0, 0, 0
+}
+
