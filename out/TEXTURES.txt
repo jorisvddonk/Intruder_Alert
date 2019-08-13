@@ -906,7 +906,6 @@ Sprite CRUAA0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAA0, 243, 231
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAB0, 500, 500 {
@@ -914,7 +913,6 @@ Sprite CRUAB0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAB0, 238, 231
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAC0, 500, 500 {
@@ -922,7 +920,6 @@ Sprite CRUAC0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAC0, 234, 235
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAD0, 500, 500 {
@@ -930,7 +927,6 @@ Sprite CRUAD0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAD0, 229, 238
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAE0, 500, 500 {
@@ -938,7 +934,6 @@ Sprite CRUAE0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAE0, 230, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAF0, 500, 500 {
@@ -946,7 +941,6 @@ Sprite CRUAF0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAF0, 230, 237
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAG0, 500, 500 {
@@ -954,7 +948,6 @@ Sprite CRUAG0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAG0, 234, 235
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAH0, 500, 500 {
@@ -962,7 +955,6 @@ Sprite CRUAH0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAH0, 237, 233
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAI0, 500, 500 {
@@ -970,7 +962,6 @@ Sprite CRUAI0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAI0, 243, 233
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAJ0, 500, 500 {
@@ -978,7 +969,6 @@ Sprite CRUAJ0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAJ0, 237, 233
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAK0, 500, 500 {
@@ -986,7 +976,6 @@ Sprite CRUAK0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAK0, 233, 235
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAL0, 500, 500 {
@@ -994,7 +983,6 @@ Sprite CRUAL0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAL0, 230, 237
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAM0, 500, 500 {
@@ -1002,7 +990,6 @@ Sprite CRUAM0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAM0, 227, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAN0, 500, 500 {
@@ -1010,7 +997,6 @@ Sprite CRUAN0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAN0, 231, 239
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAO0, 500, 500 {
@@ -1018,7 +1004,6 @@ Sprite CRUAO0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAO0, 233, 234
-    Patch SPACC0, 250, 250
 }
 
 Sprite CRUAP0, 500, 500 {
@@ -1026,7 +1011,6 @@ Sprite CRUAP0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch CRUAP0, 237, 231
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAA0, 500, 500 {
@@ -1034,7 +1018,6 @@ Sprite NMBAA0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAA0, 236, 239
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAB0, 500, 500 {
@@ -1042,7 +1025,6 @@ Sprite NMBAB0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAB0, 233, 239
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAC0, 500, 500 {
@@ -1050,7 +1032,6 @@ Sprite NMBAC0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAC0, 233, 240
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAD0, 500, 500 {
@@ -1058,7 +1039,6 @@ Sprite NMBAD0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAD0, 234, 240
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAE0, 500, 500 {
@@ -1066,7 +1046,6 @@ Sprite NMBAE0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAE0, 239, 236
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAF0, 500, 500 {
@@ -1074,7 +1053,6 @@ Sprite NMBAF0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAF0, 233, 234
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAG0, 500, 500 {
@@ -1082,7 +1060,6 @@ Sprite NMBAG0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAG0, 231, 232
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAH0, 500, 500 {
@@ -1090,7 +1067,6 @@ Sprite NMBAH0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAH0, 233, 235
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAI0, 500, 500 {
@@ -1098,7 +1074,6 @@ Sprite NMBAI0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAI0, 236, 239
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAJ0, 500, 500 {
@@ -1106,7 +1081,6 @@ Sprite NMBAJ0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAJ0, 241, 234
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAK0, 500, 500 {
@@ -1114,7 +1088,6 @@ Sprite NMBAK0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAK0, 240, 231
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAL0, 500, 500 {
@@ -1122,7 +1095,6 @@ Sprite NMBAL0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAL0, 239, 234
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAM0, 500, 500 {
@@ -1130,7 +1102,6 @@ Sprite NMBAM0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAM0, 239, 236
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAN0, 500, 500 {
@@ -1138,7 +1109,6 @@ Sprite NMBAN0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAN0, 239, 240
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAO0, 500, 500 {
@@ -1146,7 +1116,6 @@ Sprite NMBAO0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAO0, 240, 240
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMBAP0, 500, 500 {
@@ -1154,7 +1123,6 @@ Sprite NMBAP0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMBAP0, 241, 239
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAA0, 500, 500 {
@@ -1162,7 +1130,6 @@ Sprite NMTAA0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAA0, 244, 239
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAB0, 500, 500 {
@@ -1170,7 +1137,6 @@ Sprite NMTAB0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAB0, 244, 240
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAC0, 500, 500 {
@@ -1178,7 +1144,6 @@ Sprite NMTAC0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAC0, 244, 242
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAD0, 500, 500 {
@@ -1186,7 +1151,6 @@ Sprite NMTAD0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAD0, 245, 245
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAE0, 500, 500 {
@@ -1194,7 +1158,6 @@ Sprite NMTAE0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAE0, 245, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAF0, 500, 500 {
@@ -1202,7 +1165,6 @@ Sprite NMTAF0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAF0, 245, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAG0, 500, 500 {
@@ -1210,7 +1172,6 @@ Sprite NMTAG0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAG0, 244, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAH0, 500, 500 {
@@ -1218,7 +1179,6 @@ Sprite NMTAH0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAH0, 244, 245
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAI0, 500, 500 {
@@ -1226,7 +1186,6 @@ Sprite NMTAI0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAI0, 244, 245
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAJ0, 500, 500 {
@@ -1234,7 +1193,6 @@ Sprite NMTAJ0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAJ0, 245, 245
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAK0, 500, 500 {
@@ -1242,7 +1200,6 @@ Sprite NMTAK0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAK0, 242, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAL0, 500, 500 {
@@ -1250,7 +1207,6 @@ Sprite NMTAL0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAL0, 240, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAM0, 500, 500 {
@@ -1258,7 +1214,6 @@ Sprite NMTAM0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAM0, 239, 244
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAN0, 500, 500 {
@@ -1266,7 +1221,6 @@ Sprite NMTAN0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAN0, 240, 245
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAO0, 500, 500 {
@@ -1274,7 +1228,6 @@ Sprite NMTAO0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAO0, 242, 242
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAP0, 500, 500 {
@@ -1282,7 +1235,6 @@ Sprite NMTAP0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAP0, 245, 240
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAU0, 500, 500 {
@@ -1290,7 +1242,6 @@ Sprite NMTAU0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAU0, 249, 249
-    Patch SPACC0, 250, 250
 }
 
 Sprite NMTAV0, 500, 500 {
@@ -1298,7 +1249,6 @@ Sprite NMTAV0, 500, 500 {
     YSCALE 2
     Offset 250, 250
     Patch NMTAV0, 249, 249
-    Patch SPACC0, 250, 250
 }
 
 Sprite SPACA0, 256, 256 {

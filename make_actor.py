@@ -77,7 +77,6 @@ def writeBasicSprite(spriteInfo, scale, xoffset=0, yoffset=0):
     YSCALE %(scale)s
     Offset %(hswidth)s, %(hsheight)s
     Patch %(sname)s, %(xmid)s, %(ymid)s
-    Patch SPACC0, %(hswidth)s, %(hsheight)s
 }
 
 ''' % locals())
