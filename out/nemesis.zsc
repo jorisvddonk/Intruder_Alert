@@ -52,4 +52,12 @@ class Nemesis : AISpaceship {
       NMBA P -1;
       stop;
   }
+
+  override void PostBeginPlay()
+  {
+    Super.PostBeginPlay();
+    NemesisTurret turret = NemesisTurret(Spawn("NemesisTurret", self.pos));
+    turret.setOwner(self);
+    turret.setTarget(self.target);
+  }
 }
