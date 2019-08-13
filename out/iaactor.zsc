@@ -86,8 +86,8 @@ class IAActor : Actor {
 
   virtual Vector3 getDoomWorldPosition() {
     if (self.battleScreen != null) {
-        float x = self.battleScreen.origin.y - self.uPosition.y;
-        float a = self.battleScreen.angle + 90;
+        float x = self.battleScreen.origin.x - self.uPosition.x;
+        float a = self.battleScreen.angle - 90;
         float b = self.battleScreen.angle; // to prevent z-fighting
         float newX = self.battleScreen.pos.x - (Cos(a) * x) + (Cos(b) * 0.1);
         float newY = self.battleScreen.pos.y - (Sin(a) * x) + (Sin(b) * 0.1);
