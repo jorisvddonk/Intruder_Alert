@@ -1,62 +1,47 @@
-class ParallaxStar : Actor {
-  Vector3 initialPosition;
+class ParallaxStar : IAActor {
   float posMultiplyFactor;
-  Spaceship playerShip;
-
-  Default {
-    +NOGRAVITY;
-    +WALLSPRITE;
-    +DONTINTERPOLATE;
-  }
 
   States {
     Spawn:
-      goto Star1;
-    Star1:
+      goto S0;
+    S0:
       SPAC B -1;
       loop;
-    Star2:
+    S1:
       SPAC C -1;
       loop;
   }
 
-  override void PostBeginPlay()
-  {
-    initialPosition = (self.Pos.x, self.Pos.y, self.Pos.z);
-    setXYZ((self.Pos.x, self.Pos.y + Random(-100, 100), self.Pos.z + Random(-100, 100)));
-  }
-
-  void setPlayerShip(Spaceship tgt) {
-    self.playerShip = tgt;
-  }
-
   void setposMultiplyFactor(float f) {
     self.posMultiplyFactor = f;
-    if (f < 1) {
-      SetState(ResolveState("Star2"));
+  }
+
+  override void PostBeginPlay() {
+    Super.PostBeginPlay();
+    if (self.posMultiplyFactor > -0.8 && self.posMultiplyFactor < 0.8) {
+      self.ang = 1;
     }
   }
 
-  virtual Vector3 getNewDoomWorldPosition() {
-    float newX = self.pos.x;
-    float newY = self.pos.y - self.playerShip.mov.x * 0.01 * self.posMultiplyFactor;
-    float newZ = self.pos.z - self.playerShip.mov.y * 0.01 * self.posMultiplyFactor;
-    if (newY - self.initialPosition.y < -100) {
-      newY = newY + 200;
-    }
-    if (newY - self.initialPosition.y > 100) {
-      newY = newY - 200;
-    }
-    if (newZ - self.initialPosition.z < -100) {
-      newZ = newZ + 200;
-    }
-    if (newZ - self.initialPosition.z > 100) {
-      newZ = newZ - 200;
-    }
-    return (newX, newY, newZ);
-  }
+  override Vector2 getUniversePosition() {
+    float oX = self.battleScreen.origin.x;
+    float oY = self.battleScreen.origin.y;
 
-  override void Tick() {
-    SetXYZ(getNewDoomWorldPosition());
+    float x = (oX * posMultiplyFactor) + self.uPosition.x;
+    float y = (oY * posMultiplyFactor) + self.uPosition.y;
+    
+    while (x < oX - 100) {
+      x += 200;
+    }
+    while (x > oX + 100) {
+      x -= 200;
+    }
+    while (y < oY - 100) {
+      y += 200;
+    }
+    while (y > oY + 100) {
+      y -= 200;
+    }
+    return (x, y);
   }
 }

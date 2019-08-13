@@ -84,14 +84,19 @@ class IAActor : Actor {
     }
   }
 
+  virtual Vector2 getUniversePosition() {
+    return self.uPosition;
+  }
+
   virtual Vector3 getDoomWorldPosition() {
     if (self.battleScreen != null) {
-        float x = self.battleScreen.origin.x - self.uPosition.x;
+        Vector2 uP = self.getUniversePosition();
+        float x = self.battleScreen.origin.x - uP.x;
         float a = self.battleScreen.angle - 90;
         float b = self.battleScreen.angle; // to prevent z-fighting
         float newX = self.battleScreen.pos.x - (Cos(a) * x) + (Cos(b) * 0.1);
         float newY = self.battleScreen.pos.y - (Sin(a) * x) + (Sin(b) * 0.1);
-        float newZ = self.battleScreen.pos.z - (self.battleScreen.origin.y - self.uPosition.y);
+        float newZ = self.battleScreen.pos.z - (self.battleScreen.origin.y - uP.y);
         return (newX, newY, newZ);
     }
     return (0,0,0);
