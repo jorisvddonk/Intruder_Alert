@@ -1,5 +1,6 @@
 version "3.5"
 
+#include "iaactor.zsc"
 #include "orz.zsc"
 #include "animActors.zsc"
 #include "spaceship.zsc"

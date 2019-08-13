@@ -1,0 +1,83 @@
+class IAActor : Actor {
+  Vector2 uPosition;
+  int angle;
+
+  Default {
+    +NOGRAVITY;
+    +WALLSPRITE;
+    +DONTINTERPOLATE;
+  }
+
+  override void PostBeginPlay()
+  {
+    angle = 0;
+  }
+
+  void setuPosition(Vector2 position) {
+    self.uPosition = position;
+  }
+
+  void updateStateFromAngle() {
+    if (angle < 0) {
+      angle = angle + 16;
+    }
+    if (angle > 15) {
+      angle = angle - 16;
+    }
+
+    // Console.Printf("%i", angle);
+
+    if (angle == 0) {
+      SetState(ResolveState("S0"));
+    }
+    if (angle == 1) {
+      SetState(ResolveState("S1"));
+    }
+    if (angle == 2) {
+      SetState(ResolveState("S2"));
+    }
+    if (angle == 3) {
+      SetState(ResolveState("S3"));
+    }
+    if (angle == 4) {
+      SetState(ResolveState("S4"));
+    }
+    if (angle == 5) {
+      SetState(ResolveState("S5"));
+    }
+    if (angle == 6) {
+      SetState(ResolveState("S6"));
+    }
+    if (angle == 7) {
+      SetState(ResolveState("S7"));
+    }
+    if (angle == 8) {
+      SetState(ResolveState("S8"));
+    }
+    if (angle == 9) {
+      SetState(ResolveState("S9"));
+    }
+    if (angle == 10) {
+      SetState(ResolveState("S10"));
+    }
+    if (angle == 11) {
+      SetState(ResolveState("S11"));
+    }
+    if (angle == 12) {
+      SetState(ResolveState("S12"));
+    }
+    if (angle == 13) {
+      SetState(ResolveState("S13"));
+    }
+    if (angle == 14) {
+      SetState(ResolveState("S14"));
+    }
+    if (angle == 15) {
+      SetState(ResolveState("S15"));
+    }
+  }
+
+  override void Tick() {
+    updateStateFromAngle();
+  }
+}
