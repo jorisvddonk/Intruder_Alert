@@ -89,6 +89,10 @@ class NemesisMarine : MovableIAActor {
     float dy = (self.uPosition.y - self.target.uPosition.y);
     if (((dx * dx) + (dy * dy)) < 10) {
       A_PLAYSOUND("nem/int", CHAN_AUTO, 1, false, ATTN_NONE, false);
+      
+      Actor zmb = Spawn("ZombieMan", (-900,-900,-900));
+      zmb.A_Teleport("Teleport", "IntruderSpawnSpot");
+
       self.Destroy();
     }
   }

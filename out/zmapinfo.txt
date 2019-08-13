@@ -7,4 +7,5 @@ DoomEdNums
 {
   31633 = OrzScreen
   31640 = BattleScreen
+  31650 = IntruderSpawnSpot
 }
