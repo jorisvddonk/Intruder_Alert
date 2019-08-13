@@ -51,7 +51,10 @@
    }
  }
 
-class BattleScreen: Actor {
+class BattleScreen : Actor {
+  Spaceship playerShip;
+  Vector2 origin;
+
   Default {
     +NOGRAVITY;
     +WALLSPRITE;
@@ -65,6 +68,7 @@ class BattleScreen: Actor {
         spos.x = spos.x - 0.1; // prevent z-fighting with the base image. TODO: account for angle.
         EarthlingCruiser cruiser = EarthlingCruiser(Spawn("EarthlingCruiser", spos, NO_REPLACE));
         cruiser.setuPosition((0,0));
+        self.playerShip = cruiser;
 
         Vector3 npos = self.pos;
         npos.y = npos.y - 20;
@@ -73,7 +77,6 @@ class BattleScreen: Actor {
         Nemesis nemesis = Nemesis(Spawn("Nemesis", npos, NO_REPLACE));
         nemesis.setuPosition((20,20));
         nemesis.setTarget(cruiser);
-        nemesis.setPlayerShip(cruiser);
 
         for (int i = 0; i < 50; i++) {
           Vector3 starpos = self.pos;
@@ -88,5 +91,16 @@ class BattleScreen: Actor {
       }
       SPAC A -1;
       stop;
+  }
+
+  override void PostBeginPlay() {
+    origin = (0,0);
+  }
+
+  override void Tick() {
+    if (self.playerShip) {
+      origin = self.playerShip.uPosition;
+    }
+    Super.Tick();
   }
 }

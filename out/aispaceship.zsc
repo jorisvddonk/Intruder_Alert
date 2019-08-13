@@ -2,14 +2,9 @@ class AISpaceship : Spaceship {
   PIDController posXPID;
   PIDController posYPID;
   Spaceship target;
-  Spaceship playerShip;
   
   void setTarget(Spaceship tgt) {
     self.target = tgt;
-  }
-
-  void setPlayerShip(Spaceship tgt) {
-    self.playerShip = tgt;
   }
 
   override void PostBeginPlay()
@@ -49,13 +44,6 @@ class AISpaceship : Spaceship {
     float y = Cos(anglesixteen * (360/16));
     Vector2 vec = (x,y);
     return vec.Unit();
-  }
-
-  override Vector3 getDoomWorldPosition() {
-    float newX = self.playerShip.pos.x;
-    float newY = self.playerShip.pos.y - (self.playerShip.uPosition.x - self.uPosition.x);
-    float newZ = self.playerShip.pos.z - (self.playerShip.uPosition.y - self.uPosition.y);
-    return (newX, newY, newZ);
   }
 
   override void Tick() {

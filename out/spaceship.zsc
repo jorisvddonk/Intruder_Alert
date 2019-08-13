@@ -1,27 +1,18 @@
-class Spaceship : IAActor {
-  Vector3 initialPosition;
-  Vector2 mov;
-
+class Spaceship : MovableIAActor {
   int roting;
   bool thrusting;
-
   int lastRot;
   int lastThrust;
-  Default {
-    +NOGRAVITY;
-    +WALLSPRITE;
-    +DONTINTERPOLATE;
-  }
 
   override void PostBeginPlay()
   {
+    Super.PostBeginPlay();
     mov = (0,0);
     angle = 0;
     roting = 0;
     lastRot = 0;
     lastThrust = 0;
     thrusting = false;
-    initialPosition = (self.Pos.x, self.Pos.y, self.Pos.z);
   }
 
   void setuPosition(Vector2 position) {
@@ -55,20 +46,9 @@ class Spaceship : IAActor {
     }
   }
 
-  void updateUniversePosition() {
-    self.uPosition.x = self.uPosition.x + (mov.x * 0.02);
-    self.uPosition.y = self.uPosition.y + (mov.y * 0.02);
-  }
-
-  virtual Vector3 getDoomWorldPosition() {
-    return self.initialPosition;
-  }
-
   override void Tick() {
     maybeRotate();
     maybeThrust();
     Super.Tick();
-    updateUniversePosition();
-    SetXYZ(getDoomWorldPosition());
   }
 }

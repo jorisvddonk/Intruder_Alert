@@ -1,0 +1,71 @@
+class NemesisMarine : IAActor {
+  IAActor owner;
+  Spaceship target;
+
+  void setOwner(IAActor own) {
+    self.owner = own;
+  }
+  void setTarget(Spaceship tgt) {
+    self.target = tgt;
+  }
+
+  States {
+    Spawn:
+      Goto S0;
+    S0:
+      NMTA U -1;
+      stop;
+    S1:
+      NMTA U -1;
+      stop;
+    S2:
+      NMTA U -1;
+      stop;
+    S3:
+      NMTA U -1;
+      stop;
+    S4:
+      NMTA U -1;
+      stop;
+    S5:
+      NMTA U -1;
+      stop;
+    S6:
+      NMTA U -1;
+      stop;
+    S7:
+      NMTA U -1;
+      stop;
+    S8:
+      NMTA U -1;
+      stop;
+    S9:
+      NMTA U -1;
+      stop;
+    S10:
+      NMTA U -1;
+      stop;
+    S11:
+      NMTA U -1;
+      stop;
+    S12:
+      NMTA U -1;
+      stop;
+    S13:
+      NMTA U -1;
+      stop;
+    S14:
+      NMTA U -1;
+      stop;
+    S15:
+      NMTA U -1;
+      stop;
+  }
+
+  override void Tick() {
+    Super.Tick();
+    SetXYZ(owner.pos);
+    angle = owner.angle;
+  }
+
+}

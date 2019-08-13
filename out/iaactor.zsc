@@ -1,5 +1,6 @@
 class IAActor : Actor {
   Vector2 uPosition;
+  BattleScreen battleScreen;
   int angle;
 
   Default {
@@ -11,6 +12,11 @@ class IAActor : Actor {
   override void PostBeginPlay()
   {
     angle = 0;
+    ThinkerIterator t = ThinkerIterator.Create("BattleScreen");
+    Actor b;
+    while (b = BattleScreen(t.Next())) {
+      self.battleScreen = BattleScreen(b);
+    }
   }
 
   void setuPosition(Vector2 position) {
@@ -77,7 +83,18 @@ class IAActor : Actor {
     }
   }
 
+  virtual Vector3 getDoomWorldPosition() {
+    if (self.battleScreen != null) {
+        float newX = self.battleScreen.pos.x - 0.1; // prevent z-fighting
+        float newY = self.battleScreen.pos.y - (self.battleScreen.origin.x - self.uPosition.x);
+        float newZ = self.battleScreen.pos.z - (self.battleScreen.origin.y - self.uPosition.y);
+        return (newX, newY, newZ);
+    }
+    return (0,0,0);
+  }
+
   override void Tick() {
     updateStateFromAngle();
+    SetXYZ(getDoomWorldPosition());
   }
 }

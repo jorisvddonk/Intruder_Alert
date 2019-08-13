@@ -1,0 +1,19 @@
+class MovableIAActor : IAActor {
+  Vector2 mov;
+
+  override void PostBeginPlay()
+  {
+    Super.PostBeginPlay();
+    mov = (0,0);
+  }
+
+  void updateUniversePosition() {
+    self.uPosition.x = self.uPosition.x + (mov.x * 0.02);
+    self.uPosition.y = self.uPosition.y + (mov.y * 0.02);
+  }
+
+  override void Tick() {
+    updateUniversePosition();
+    Super.Tick();
+  }
+}
