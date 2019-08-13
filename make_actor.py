@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+import math
 from shutil import copyfile
 from orz_locdata import AMBIENT_ANIM
 from PIL import Image
@@ -23,6 +24,19 @@ def getCode(x, basename):
     return "%s%s%s0" % (basename, x0, x1)
 
 
+OFFSETLIB = {}
+for g in glob.glob('./**/*.ani', recursive=True):
+    f = open(g, 'r')
+    lines = f.read().splitlines()
+    f.close()
+    for l in lines:
+        s = l.split()
+        OFFSETLIB[s[0]] = {
+            "x": s[3],
+            "y": s[4]
+        }
+
+
 def copyShip(inglob, basename):
     retval = []
     for g in glob.glob('./sc2/ships/%s*.png' % inglob):
@@ -35,24 +49,38 @@ def copyShip(inglob, basename):
         if not (os.path.exists(outImagePath)):
             copyfile(inImagePath, outImagePath)
         angle = (360 / 16) * anglei
-        retval.append({"angle": angle, "anglei": anglei,
-                       "imageCode": outImageCode, "imagePath": outImagePath})
+        anglep = ((math.pi * 2) / 16) * anglei
+        imgname = inImagePath.replace('\\', '/').split('/').pop()
+        offx = int(OFFSETLIB[imgname]["x"])
+        offy = int(OFFSETLIB[imgname]["y"])
+        retval.append({"angle": angle, "anglei": anglei, "anglep": anglep,
+                       "imageCode": outImageCode, "imagePath": outImagePath, "offx": offx, "offy": offy})
     return retval
 
 
-def writeBasicSprite(spriteInfo, scale):
+def writeBasicSprite(spriteInfo, scale, xoffset=0, yoffset=0):
     im = Image.open(spriteInfo["imagePath"])
     width = im.size[0]
     height = im.size[1]
+    swidth = 500
+    sheight = 500
+    hswidth = int(swidth * 0.5)
+    hsheight = int(sheight * 0.5)
     sname = spriteInfo["imageCode"]
-    texturesf.write('''Sprite %s, %s, %s {
-    XSCALE %s
-    YSCALE %s
-    Offset %s, %s
-    Patch %s, 0, 0
+    ranglep = spriteInfo["anglep"]
+    xmid = int((swidth*0.5) + (math.sin(ranglep)
+                               * yoffset) - spriteInfo["offx"])
+    ymid = int((sheight*0.5) - (math.cos(ranglep)
+                                * yoffset) - spriteInfo["offy"])
+    texturesf.write('''Sprite %(sname)s, %(swidth)s, %(sheight)s {
+    XSCALE %(scale)s
+    YSCALE %(scale)s
+    Offset %(hswidth)s, %(hsheight)s
+    Patch %(sname)s, %(xmid)s, %(ymid)s
+    Patch SPACC0, %(hswidth)s, %(hsheight)s
 }
 
-''' % (sname, width, height, scale, scale, int(width*0.5), int(height*0.5), sname))
+''' % locals())
 
 
 n = 1
@@ -119,6 +147,7 @@ actorsf.close()
 
 nemesis_base_images = copyShip('orz/nemesis-big-', 'NMB')
 nemesis_turret_images = copyShip('orz/turret-big-', 'NMT')
+nemesis_howitzer_images = copyShip('orz/howitzer-big-', 'NMH')
 cruiser_images = copyShip('human/cruiser-big-', 'CRU')
 
 for imginfo in cruiser_images:
@@ -147,3 +176,4 @@ for g in glob.glob('./out/SPA*.png'):
 
 
 texturesf.close()
+ani.close()

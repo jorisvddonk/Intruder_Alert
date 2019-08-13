@@ -901,340 +901,404 @@ Sprite ORZEY0, 12, 42 {
     Patch ORZEY0, 0, 0
 }
 
-Sprite CRUAA0, 13, 35 {
+Sprite CRUAA0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 17
-    Patch CRUAA0, 0, 0
+    Offset 250, 250
+    Patch CRUAA0, 243, 231
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAB0, 24, 35 {
+Sprite CRUAB0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 12, 17
-    Patch CRUAB0, 0, 0
+    Offset 250, 250
+    Patch CRUAB0, 238, 231
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAC0, 32, 29 {
+Sprite CRUAC0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 16, 14
-    Patch CRUAC0, 0, 0
+    Offset 250, 250
+    Patch CRUAC0, 234, 235
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAD0, 39, 24 {
+Sprite CRUAD0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 19, 12
-    Patch CRUAD0, 0, 0
+    Offset 250, 250
+    Patch CRUAD0, 229, 238
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAE0, 42, 11 {
+Sprite CRUAE0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 21, 5
-    Patch CRUAE0, 0, 0
+    Offset 250, 250
+    Patch CRUAE0, 230, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAF0, 39, 24 {
+Sprite CRUAF0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 19, 12
-    Patch CRUAF0, 0, 0
+    Offset 250, 250
+    Patch CRUAF0, 230, 237
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAG0, 32, 30 {
+Sprite CRUAG0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 16, 15
-    Patch CRUAG0, 0, 0
+    Offset 250, 250
+    Patch CRUAG0, 234, 235
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAH0, 25, 35 {
+Sprite CRUAH0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 12, 17
-    Patch CRUAH0, 0, 0
+    Offset 250, 250
+    Patch CRUAH0, 237, 233
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAI0, 13, 36 {
+Sprite CRUAI0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 18
-    Patch CRUAI0, 0, 0
+    Offset 250, 250
+    Patch CRUAI0, 243, 233
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAJ0, 24, 35 {
+Sprite CRUAJ0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 12, 17
-    Patch CRUAJ0, 0, 0
+    Offset 250, 250
+    Patch CRUAJ0, 237, 233
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAK0, 32, 30 {
+Sprite CRUAK0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 16, 15
-    Patch CRUAK0, 0, 0
+    Offset 250, 250
+    Patch CRUAK0, 233, 235
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAL0, 39, 24 {
+Sprite CRUAL0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 19, 12
-    Patch CRUAL0, 0, 0
+    Offset 250, 250
+    Patch CRUAL0, 230, 237
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAM0, 42, 11 {
+Sprite CRUAM0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 21, 5
-    Patch CRUAM0, 0, 0
+    Offset 250, 250
+    Patch CRUAM0, 227, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAN0, 39, 23 {
+Sprite CRUAN0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 19, 11
-    Patch CRUAN0, 0, 0
+    Offset 250, 250
+    Patch CRUAN0, 231, 239
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAO0, 32, 30 {
+Sprite CRUAO0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 16, 15
-    Patch CRUAO0, 0, 0
+    Offset 250, 250
+    Patch CRUAO0, 233, 234
+    Patch SPACC0, 250, 250
 }
 
-Sprite CRUAP0, 24, 35 {
+Sprite CRUAP0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 12, 17
-    Patch CRUAP0, 0, 0
+    Offset 250, 250
+    Patch CRUAP0, 237, 231
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAA0, 29, 23 {
+Sprite NMBAA0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 11
-    Patch NMBAA0, 0, 0
+    Offset 250, 250
+    Patch NMBAA0, 236, 239
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAB0, 27, 28 {
+Sprite NMBAB0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 13, 14
-    Patch NMBAB0, 0, 0
+    Offset 250, 250
+    Patch NMBAB0, 233, 239
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAC0, 28, 28 {
+Sprite NMBAC0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 14
-    Patch NMBAC0, 0, 0
+    Offset 250, 250
+    Patch NMBAC0, 233, 240
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAD0, 29, 27 {
+Sprite NMBAD0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 13
-    Patch NMBAD0, 0, 0
+    Offset 250, 250
+    Patch NMBAD0, 234, 240
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAE0, 23, 29 {
+Sprite NMBAE0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 11, 14
-    Patch NMBAE0, 0, 0
+    Offset 250, 250
+    Patch NMBAE0, 239, 236
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAF0, 29, 27 {
+Sprite NMBAF0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 13
-    Patch NMBAF0, 0, 0
+    Offset 250, 250
+    Patch NMBAF0, 233, 234
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAG0, 30, 29 {
+Sprite NMBAG0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 15, 14
-    Patch NMBAG0, 0, 0
+    Offset 250, 250
+    Patch NMBAG0, 231, 232
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAH0, 27, 27 {
+Sprite NMBAH0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 13, 13
-    Patch NMBAH0, 0, 0
+    Offset 250, 250
+    Patch NMBAH0, 233, 235
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAI0, 29, 23 {
+Sprite NMBAI0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 11
-    Patch NMBAI0, 0, 0
+    Offset 250, 250
+    Patch NMBAI0, 236, 239
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAJ0, 27, 28 {
+Sprite NMBAJ0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 13, 14
-    Patch NMBAJ0, 0, 0
+    Offset 250, 250
+    Patch NMBAJ0, 241, 234
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAK0, 29, 30 {
+Sprite NMBAK0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 15
-    Patch NMBAK0, 0, 0
+    Offset 250, 250
+    Patch NMBAK0, 240, 231
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAL0, 29, 27 {
+Sprite NMBAL0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 13
-    Patch NMBAL0, 0, 0
+    Offset 250, 250
+    Patch NMBAL0, 239, 234
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAM0, 23, 29 {
+Sprite NMBAM0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 11, 14
-    Patch NMBAM0, 0, 0
+    Offset 250, 250
+    Patch NMBAM0, 239, 236
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAN0, 29, 27 {
+Sprite NMBAN0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 14, 13
-    Patch NMBAN0, 0, 0
+    Offset 250, 250
+    Patch NMBAN0, 239, 240
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAO0, 30, 29 {
+Sprite NMBAO0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 15, 14
-    Patch NMBAO0, 0, 0
+    Offset 250, 250
+    Patch NMBAO0, 240, 240
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMBAP0, 27, 28 {
+Sprite NMBAP0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 13, 14
-    Patch NMBAP0, 0, 0
+    Offset 250, 250
+    Patch NMBAP0, 241, 239
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAA0, 13, 17 {
+Sprite NMTAA0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 8
-    Patch NMTAA0, 0, 0
+    Offset 250, 250
+    Patch NMTAA0, 244, 239
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAB0, 12, 16 {
+Sprite NMTAB0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 8
-    Patch NMTAB0, 0, 0
+    Offset 250, 250
+    Patch NMTAB0, 244, 240
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAC0, 15, 15 {
+Sprite NMTAC0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 7, 7
-    Patch NMTAC0, 0, 0
+    Offset 250, 250
+    Patch NMTAC0, 244, 242
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAD0, 16, 12 {
+Sprite NMTAD0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 8, 6
-    Patch NMTAD0, 0, 0
+    Offset 250, 250
+    Patch NMTAD0, 245, 245
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAE0, 17, 13 {
+Sprite NMTAE0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 8, 6
-    Patch NMTAE0, 0, 0
+    Offset 250, 250
+    Patch NMTAE0, 245, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAF0, 16, 12 {
+Sprite NMTAF0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 8, 6
-    Patch NMTAF0, 0, 0
+    Offset 250, 250
+    Patch NMTAF0, 245, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAG0, 15, 15 {
+Sprite NMTAG0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 7, 7
-    Patch NMTAG0, 0, 0
+    Offset 250, 250
+    Patch NMTAG0, 244, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAH0, 12, 16 {
+Sprite NMTAH0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 8
-    Patch NMTAH0, 0, 0
+    Offset 250, 250
+    Patch NMTAH0, 244, 245
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAI0, 13, 17 {
+Sprite NMTAI0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 8
-    Patch NMTAI0, 0, 0
+    Offset 250, 250
+    Patch NMTAI0, 244, 245
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAJ0, 12, 16 {
+Sprite NMTAJ0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 8
-    Patch NMTAJ0, 0, 0
+    Offset 250, 250
+    Patch NMTAJ0, 245, 245
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAK0, 15, 15 {
+Sprite NMTAK0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 7, 7
-    Patch NMTAK0, 0, 0
+    Offset 250, 250
+    Patch NMTAK0, 242, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAL0, 16, 12 {
+Sprite NMTAL0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 8, 6
-    Patch NMTAL0, 0, 0
+    Offset 250, 250
+    Patch NMTAL0, 240, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAM0, 17, 13 {
+Sprite NMTAM0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 8, 6
-    Patch NMTAM0, 0, 0
+    Offset 250, 250
+    Patch NMTAM0, 239, 244
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAN0, 16, 12 {
+Sprite NMTAN0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 8, 6
-    Patch NMTAN0, 0, 0
+    Offset 250, 250
+    Patch NMTAN0, 240, 245
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAO0, 15, 15 {
+Sprite NMTAO0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 7, 7
-    Patch NMTAO0, 0, 0
+    Offset 250, 250
+    Patch NMTAO0, 242, 242
+    Patch SPACC0, 250, 250
 }
 
-Sprite NMTAP0, 12, 16 {
+Sprite NMTAP0, 500, 500 {
     XSCALE 2
     YSCALE 2
-    Offset 6, 8
-    Patch NMTAP0, 0, 0
+    Offset 250, 250
+    Patch NMTAP0, 245, 240
+    Patch SPACC0, 250, 250
+}
+
+Sprite NMTAU0, 500, 500 {
+    XSCALE 2
+    YSCALE 2
+    Offset 250, 250
+    Patch NMTAU0, 249, 249
+    Patch SPACC0, 250, 250
+}
+
+Sprite NMTAV0, 500, 500 {
+    XSCALE 2
+    YSCALE 2
+    Offset 250, 250
+    Patch NMTAV0, 249, 249
+    Patch SPACC0, 250, 250
 }
 
 Sprite SPACA0, 256, 256 {
