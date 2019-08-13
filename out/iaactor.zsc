@@ -1,7 +1,7 @@
 class IAActor : Actor {
   Vector2 uPosition;
   BattleScreen battleScreen;
-  int angle;
+  int ang;
 
   Default {
     +NOGRAVITY;
@@ -11,12 +11,13 @@ class IAActor : Actor {
 
   override void PostBeginPlay()
   {
-    angle = 0;
+    ang = 0;
     ThinkerIterator t = ThinkerIterator.Create("BattleScreen");
     Actor b;
     while (b = BattleScreen(t.Next())) {
       self.battleScreen = BattleScreen(b);
     }
+    self.angle = self.battleScreen.angle + 180; // bit hacky but.. *shrug* should not add 180 to this and instead fix in sprites/textures?
   }
 
   void setuPosition(Vector2 position) {
@@ -24,69 +25,72 @@ class IAActor : Actor {
   }
 
   void updateStateFromAngle() {
-    if (angle < 0) {
-      angle = angle + 16;
+    if (ang < 0) {
+      ang = ang + 16;
     }
-    if (angle > 15) {
-      angle = angle - 16;
+    if (ang > 15) {
+      ang = ang - 16;
     }
 
-    // Console.Printf("%i", angle);
+    // Console.Printf("%i", ang);
 
-    if (angle == 0) {
+    if (ang == 0) {
       SetState(ResolveState("S0"));
     }
-    if (angle == 1) {
+    if (ang == 1) {
       SetState(ResolveState("S1"));
     }
-    if (angle == 2) {
+    if (ang == 2) {
       SetState(ResolveState("S2"));
     }
-    if (angle == 3) {
+    if (ang == 3) {
       SetState(ResolveState("S3"));
     }
-    if (angle == 4) {
+    if (ang == 4) {
       SetState(ResolveState("S4"));
     }
-    if (angle == 5) {
+    if (ang == 5) {
       SetState(ResolveState("S5"));
     }
-    if (angle == 6) {
+    if (ang == 6) {
       SetState(ResolveState("S6"));
     }
-    if (angle == 7) {
+    if (ang == 7) {
       SetState(ResolveState("S7"));
     }
-    if (angle == 8) {
+    if (ang == 8) {
       SetState(ResolveState("S8"));
     }
-    if (angle == 9) {
+    if (ang == 9) {
       SetState(ResolveState("S9"));
     }
-    if (angle == 10) {
+    if (ang == 10) {
       SetState(ResolveState("S10"));
     }
-    if (angle == 11) {
+    if (ang == 11) {
       SetState(ResolveState("S11"));
     }
-    if (angle == 12) {
+    if (ang == 12) {
       SetState(ResolveState("S12"));
     }
-    if (angle == 13) {
+    if (ang == 13) {
       SetState(ResolveState("S13"));
     }
-    if (angle == 14) {
+    if (ang == 14) {
       SetState(ResolveState("S14"));
     }
-    if (angle == 15) {
+    if (ang == 15) {
       SetState(ResolveState("S15"));
     }
   }
 
   virtual Vector3 getDoomWorldPosition() {
     if (self.battleScreen != null) {
-        float newX = self.battleScreen.pos.x - 0.1; // prevent z-fighting
-        float newY = self.battleScreen.pos.y - (self.battleScreen.origin.x - self.uPosition.x);
+        float x = self.battleScreen.origin.y - self.uPosition.y;
+        float a = self.battleScreen.angle + 90;
+        float b = self.battleScreen.angle; // to prevent z-fighting
+        float newX = self.battleScreen.pos.x - (Cos(a) * x) + (Cos(b) * 0.1);
+        float newY = self.battleScreen.pos.y - (Sin(a) * x) + (Sin(b) * 0.1);
         float newZ = self.battleScreen.pos.z - (self.battleScreen.origin.y - self.uPosition.y);
         return (newX, newY, newZ);
     }

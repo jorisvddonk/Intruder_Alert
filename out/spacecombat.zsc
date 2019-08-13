@@ -64,6 +64,7 @@ class BattleScreen : Actor {
     Spawn:
       TNT1 A 0;
       TNT1 A 0 {
+        //self.A_SetRenderStyle(0.5, STYLE_Translucent);
         Vector3 spos = self.pos;
         spos.x = spos.x - 0.1; // prevent z-fighting with the base image. TODO: account for angle.
         EarthlingCruiser cruiser = EarthlingCruiser(Spawn("EarthlingCruiser", spos, NO_REPLACE));

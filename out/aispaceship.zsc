@@ -53,7 +53,7 @@ class AISpaceship : Spaceship {
     float y_thrust = self.posYPID.step();
 
     Vector2 targetVector = (x_thrust, y_thrust);
-    Vector2 rotationVector = self.getRotationVector(self.angle);
+    Vector2 rotationVector = self.getRotationVector(self.ang);
     float thrust_angle = self.angleTo(rotationVector, targetVector);
 
     if (thrust_angle < 0) {

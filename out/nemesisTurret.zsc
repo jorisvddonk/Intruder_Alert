@@ -65,7 +65,7 @@ class NemesisTurret : IAActor {
   override void Tick() {
     Super.Tick();
     SetXYZ(owner.pos);
-    angle = owner.angle;
+    ang = owner.ang;
   }
 
 }

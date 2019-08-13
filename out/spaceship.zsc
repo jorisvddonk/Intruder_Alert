@@ -8,7 +8,7 @@ class Spaceship : MovableIAActor {
   {
     Super.PostBeginPlay();
     mov = (0,0);
-    angle = 0;
+    ang = 0;
     roting = 0;
     lastRot = 0;
     lastThrust = 0;
@@ -31,7 +31,7 @@ class Spaceship : MovableIAActor {
     lastRot = lastRot - 1;
     if (lastRot <= 0) {
       if (roting != 0) {
-        angle = angle + roting;
+        ang = ang + roting;
         lastRot = 10;
       }
     }
@@ -41,7 +41,7 @@ class Spaceship : MovableIAActor {
     lastThrust = lastThrust - 1;
     if (lastThrust <= 0) {
       if (thrusting) {
-        mov = (mov.x + (sin(angle * (360 / 16))), mov.y + (cos(angle * (360 / 16))));
+        mov = (mov.x + (sin(ang * (360 / 16))), mov.y + (cos(ang * (360 / 16))));
       }
     }
   }
