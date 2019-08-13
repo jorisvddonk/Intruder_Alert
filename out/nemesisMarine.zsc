@@ -1,10 +1,8 @@
-class NemesisMarine : IAActor {
-  IAActor owner;
+class NemesisMarine : MovableIAActor {
+  PIDController posXPID;
+  PIDController posYPID;
   Spaceship target;
 
-  void setOwner(IAActor own) {
-    self.owner = own;
-  }
   void setTarget(Spaceship tgt) {
     self.target = tgt;
   }
@@ -62,10 +60,37 @@ class NemesisMarine : IAActor {
       stop;
   }
 
+  override void PostBeginPlay()
+  {
+    Super.PostBeginPlay();
+    posXPID = new("PIDController").init();
+    posYPID = new("PIDController").init();
+    posXPID.setkP(-1.0);
+    posYPID.setkP(-1.0);
+    posXPID.setkI(-3.0);
+    posYPID.setkI(-3.0);
+    posXPID.setkD(-40);
+    posYPID.setkD(-40);
+  }
+
   override void Tick() {
+    self.posXPID.update(self.uPosition.x, self.target.uPosition.x);
+    self.posYPID.update(self.uPosition.y, self.target.uPosition.y);
+    float x_thrust = self.posXPID.step();
+    float y_thrust = self.posYPID.step();
+
+    Vector2 targetVector = (Max(-1.5, Min(1.5, -x_thrust * 0.1)), Max(-1.5, Min(1.5, -y_thrust * 0.1)));
+
+    mov = (mov.x + targetVector.x, mov.y + targetVector.y);
+
     Super.Tick();
-    SetXYZ(owner.pos);
-    angle = owner.angle;
+
+    float dx = (self.uPosition.x - self.target.uPosition.x);
+    float dy = (self.uPosition.y - self.target.uPosition.y);
+    if (((dx * dx) + (dy * dy)) < 10) {
+      A_PLAYSOUND("nem/int", CHAN_AUTO, 1, false, ATTN_NONE, false);
+      self.Destroy();
+    }
   }
 
 }

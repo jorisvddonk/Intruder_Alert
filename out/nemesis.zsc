@@ -1,4 +1,5 @@
 class Nemesis : AISpaceship {
+  int lastMarineSpawn;
 
   States {
     Spawn:
@@ -59,5 +60,19 @@ class Nemesis : AISpaceship {
     NemesisTurret turret = NemesisTurret(Spawn("NemesisTurret", self.pos));
     turret.setOwner(self);
     turret.setTarget(self.target);
+    lastMarineSpawn = 0;
+  }
+
+  override void Tick() {
+    lastMarineSpawn = lastMarineSpawn + 1;
+    if (lastMarineSpawn > 100) {
+      lastMarineSpawn = 0;
+      NemesisMarine marine = NemesisMarine(Spawn("NemesisMarine", self.pos));
+      marine.setuPosition(uPosition);
+      marine.mov = self.mov;
+      marine.setTarget(self.target);
+      A_PLAYSOUND("nem/go", CHAN_AUTO, 1, false, ATTN_NONE, false);
+    }
+    Super.Tick();
   }
 }

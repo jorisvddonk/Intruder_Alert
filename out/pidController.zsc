@@ -11,16 +11,17 @@ class PIDController: Thinker {
   float maxCapIntegral;
   float maxIntegral;
 
-  override void PostBeginPlay() {
-    kp = -0.45;
-    ki = 0.0;
-    kd = -80;
-    minIntegral = -10;
-    maxIntegral = 10;
-    minCapIntegral = -10;
-    maxCapIntegral = 10;
-    error = 0;
-    previousError = 0;
+  PIDController init() {
+    self.kP = -0.45;
+    self.kI = 0.0;
+    self.kD = -80;
+    self.minIntegral = -10;
+    self.maxIntegral = 10;
+    self.minCapIntegral = -10;
+    self.maxCapIntegral = 10;
+    self.error = 0;
+    self.previousError = 0;
+    return self;
   }
 
   void update(float current, float target) {
@@ -63,5 +64,15 @@ class PIDController: Thinker {
 
     self.previousError = self.error;
     return mP + mI + mD;
+  }
+
+  void setkP(float n) {
+    self.kP = n;
+  }
+  void setkI(float n) {
+    self.kI = n;
+  }
+  void setkD(float n) {
+    self.kD = n;
   }
 }

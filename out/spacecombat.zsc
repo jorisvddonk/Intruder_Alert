@@ -75,7 +75,7 @@ class BattleScreen : Actor {
         npos.z = npos.z - 20;
         npos.x = npos.x - 0.1; // prevent z-fighting with the base image. TODO: account for angle.
         Nemesis nemesis = Nemesis(Spawn("Nemesis", npos, NO_REPLACE));
-        nemesis.setuPosition((20,20));
+        nemesis.setuPosition((300,300));
         nemesis.setTarget(cruiser);
 
         for (int i = 0; i < 50; i++) {

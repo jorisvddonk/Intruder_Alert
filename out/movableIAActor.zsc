@@ -4,7 +4,6 @@ class MovableIAActor : IAActor {
   override void PostBeginPlay()
   {
     Super.PostBeginPlay();
-    mov = (0,0);
   }
 
   void updateUniversePosition() {

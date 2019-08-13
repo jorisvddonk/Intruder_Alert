@@ -10,8 +10,8 @@ class AISpaceship : Spaceship {
   override void PostBeginPlay()
   {
     Super.PostBeginPlay();
-    posXPID = new("PIDController");
-    posYPID = new("PIDController");
+    posXPID = new("PIDController").init();
+    posYPID = new("PIDController").init();
   }
 
   float angleBetween (Vector2 from, Vector2 to) {
