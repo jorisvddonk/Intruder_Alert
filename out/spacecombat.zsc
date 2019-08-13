@@ -72,13 +72,16 @@ class BattleScreen : Actor {
         Nemesis nemesis = Nemesis(Spawn("Nemesis", self.pos, NO_REPLACE));
         nemesis.setuPosition((300,300));
         nemesis.setTarget(cruiser);
+        nemesis.setZIndex(0.09);
 
         for (int i = 0; i < 50; i++) {
           ParallaxStar star = ParallaxStar(Spawn("ParallaxStar", self.pos, NO_REPLACE));
           star.setposMultiplyFactor(-1.0);
+          star.setZIndex(0.02);
           star.setuPosition((Random(-100, 100),Random(-100, 100)));
           if (Random(0, 2) <= 1) {
             star.setposMultiplyFactor(-0.25);
+            star.setZIndex(0.01);
           }
         }
       }

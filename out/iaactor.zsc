@@ -2,6 +2,7 @@ class IAActor : Actor {
   Vector2 uPosition;
   BattleScreen battleScreen;
   int ang;
+  float zIndex;
 
   Default {
     +NOGRAVITY;
@@ -18,10 +19,17 @@ class IAActor : Actor {
       self.battleScreen = BattleScreen(b);
     }
     self.angle = self.battleScreen.angle + 180; // bit hacky but.. *shrug* should not add 180 to this and instead fix in sprites/textures?
+    if (zIndex == 0) {
+      zIndex = 0.1;
+    }
   }
 
   void setuPosition(Vector2 position) {
     self.uPosition = position;
+  }
+
+  void setZIndex(float z) {
+    self.zIndex = z;
   }
 
   void updateStateFromAngle() {
@@ -94,8 +102,8 @@ class IAActor : Actor {
         float x = self.battleScreen.origin.x - uP.x;
         float a = self.battleScreen.angle - 90;
         float b = self.battleScreen.angle; // to prevent z-fighting
-        float newX = self.battleScreen.pos.x - (Cos(a) * x) + (Cos(b) * 0.1);
-        float newY = self.battleScreen.pos.y - (Sin(a) * x) + (Sin(b) * 0.1);
+        float newX = self.battleScreen.pos.x - (Cos(a) * x) + (Cos(b) * zIndex);
+        float newY = self.battleScreen.pos.y - (Sin(a) * x) + (Sin(b) * zIndex);
         float newZ = self.battleScreen.pos.z - (self.battleScreen.origin.y - uP.y);
         return (newX, newY, newZ);
     }
